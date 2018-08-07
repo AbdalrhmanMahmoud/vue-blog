@@ -1,28 +1,41 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div id="app" class="">
+    <!-- <header class="text-center h1 p-3">hi </header> -->
+  <app-header></app-header>
+  <bodyApp v-bind:lang="lang"></bodyApp>
+<app-footer></app-footer>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import bodyApp from './components/bodyApp.vue';
+import footer from './components/footer.vue'
+import header from './components/header.vue'
+
 
 export default {
-  name: 'app',
+  // name: 'app',
   components: {
-    HelloWorld
+    'bodyApp':bodyApp,
+    'app-header':header,
+    'app-footer':footer
+  },
+  data(){
+    return{
+       lang:[
+        {name:"html", lang_type:"doc", show:false},
+        {name:"python", lang_type:"programing", show:false},
+        {name:"js", lang_type:"programing", show:false},
+        {name:"css", lang_type:"styling", show:false},
+        {name:"java", lang_type:"programing", show:false},
+
+      ]
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+
 </style>
