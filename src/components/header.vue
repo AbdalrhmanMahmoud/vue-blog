@@ -3,7 +3,6 @@
 
 <div class="">
     <h3 class="text-center">welcom from headr</h3>
-  <!-- <h1>{{ title }}</h1> -->
   
   </div> 
 
@@ -14,7 +13,6 @@
 export default {
   name: 'bodyApp',
   props: {
-    msg: String
   }
 }
 </script>

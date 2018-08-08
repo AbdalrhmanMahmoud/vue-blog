@@ -2,7 +2,6 @@
 <!-- the main body -->
 
 <footer>
-<h3 class="text-center h1 "> this for free use </h3>
 
 
 </footer>

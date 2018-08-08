@@ -2,7 +2,7 @@
   <div id="app" class="">
     <!-- <header class="text-center h1 p-3">hi </header> -->
   <app-header></app-header>
-  <bodyApp v-bind:lang="lang"></bodyApp>
+  <bodyApp></bodyApp>
 <app-footer></app-footer>
 </div>
 </template>
@@ -23,11 +23,6 @@ export default {
   data(){
     return{
        lang:[
-        {name:"html", lang_type:"doc", show:false},
-        {name:"python", lang_type:"programing", show:false},
-        {name:"js", lang_type:"programing", show:false},
-        {name:"css", lang_type:"styling", show:false},
-        {name:"java", lang_type:"programing", show:false},
 
       ]
     }
