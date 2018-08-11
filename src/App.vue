@@ -1,16 +1,22 @@
 <template>
   <div id="app" class="">
     <!-- <header class="text-center h1 p-3">hi </header> -->
-  <app-header></app-header>
-  <bodyApp></bodyApp>
+      <app-header></app-header>
+
+    <!-- <create-post></create-post> -->
+  <!-- <bodyApp></bodyApp>
+   -->
+   <router-view>
+   </router-view>
 <app-footer></app-footer>
 </div>
 </template>
 
 <script>
 import bodyApp from './components/bodyApp.vue';
-import footer from './components/footer.vue'
-import header from './components/header.vue'
+import footer from './components/footer.vue';
+import header from './components/header.vue';
+import createPost from './components/createPost.vue';
 
 
 export default {
@@ -18,7 +24,8 @@ export default {
   components: {
     'bodyApp':bodyApp,
     'app-header':header,
-    'app-footer':footer
+    'app-footer':footer,
+    'create-post':createPost
   },
   data(){
     return{

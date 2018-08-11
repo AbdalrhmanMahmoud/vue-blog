@@ -3,7 +3,9 @@
 
 <footer>
 
-
+<h3 class="text-center h1 pt-4 pb-2 font-italic">
+  created by Abdalrhman mahmoud 2018 
+</h3>
 </footer>
   
 
@@ -23,6 +25,6 @@ export default {
 <style scoped>
 footer{
     background-color: blanchedalmond;
-    height: 200px;
+    height: 100px;
 }
 </style>
